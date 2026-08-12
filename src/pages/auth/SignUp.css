@@ -1,0 +1,210 @@
+/* ==============================================
+   SIGNUP PAGE - ULTRA RESPONSIVE (300px to 4K)
+   ============================================== */
+.signup-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--hero-gradient);
+}
+
+.signup-header {
+  padding: 1.2rem clamp(1rem, 4vw, 5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.back-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: clamp(0.85rem, 0.9vw, 1.05rem);
+  transition: color 0.3s ease;
+}
+
+.back-home-link:hover {
+  color: var(--cyan-accent);
+}
+
+/* MAIN CARD CONTAINER */
+.signup-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1.5rem, 3vw, 4rem) clamp(1rem, 4vw, 5rem);
+}
+
+.signup-card-wrapper {
+  position: relative;
+  padding: 2px;
+  background: linear-gradient(135deg, var(--cyan-accent), var(--purple-accent), var(--orange-accent));
+  border-radius: 20px;
+  width: 100%;
+  max-width: 520px; /* Clean spacing for 4K and large displays */
+  box-shadow: var(--shadow-glow);
+}
+
+.signup-card {
+  background: var(--bg-card);
+  border-radius: 18px;
+  padding: clamp(1.8rem, 3vw, 3rem);
+  width: 100%;
+}
+
+.signup-title-box {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.signup-title-box h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.4rem;
+}
+
+.signup-title-box p {
+  color: var(--text-muted);
+  font-size: clamp(0.85rem, 0.95vw, 1.05rem);
+}
+
+/* FORM STYLING */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-row-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 480px) {
+  .form-row-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.input-group label {
+  font-size: clamp(0.8rem, 0.85vw, 0.95rem);
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.input-wrapper input, .input-wrapper select {
+  width: 100%;
+  padding: 0.85rem 1rem 0.85rem 2.8rem;
+  background: var(--bg-input);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  border-radius: 10px;
+  font-size: clamp(0.9rem, 0.95vw, 1.05rem);
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-wrapper input:focus, .input-wrapper select:focus {
+  border-color: var(--orange-accent);
+  box-shadow: 0 0 0 3px rgba(255, 62, 0, 0.15);
+}
+
+/* TERMS & CONDITIONS CHECKBOX */
+.terms-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: clamp(0.75rem, 0.85vw, 0.95rem);
+  color: var(--text-muted);
+  line-height: 1.4;
+  cursor: pointer;
+  margin-top: 0.2rem;
+}
+
+.terms-checkbox input {
+  margin-top: 0.2rem;
+  accent-color: var(--orange-accent);
+  cursor: pointer;
+}
+
+.terms-checkbox a {
+  color: var(--cyan-accent);
+  text-decoration: none;
+}
+
+/* SUBMIT BUTTON */
+.signup-submit-btn {
+  background: linear-gradient(135deg, var(--orange-accent), var(--purple-accent));
+  color: #ffffff;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: clamp(0.9rem, 1vw, 1.1rem);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 62, 0, 0.3);
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.signup-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.45);
+}
+
+/* FOOTER LINK */
+.signup-footer-text {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: clamp(0.85rem, 0.9vw, 1rem);
+  color: var(--text-muted);
+}
+
+.login-link {
+  color: var(--orange-accent);
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 0.3rem;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}

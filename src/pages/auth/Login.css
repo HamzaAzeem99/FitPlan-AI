@@ -1,0 +1,207 @@
+/* ==============================================
+   LOGIN PAGE - ULTRA RESPONSIVE (300px to 4K)
+   ============================================== */
+.login-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--hero-gradient);
+}
+
+.login-header {
+  padding: 1.2rem clamp(1rem, 4vw, 5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.back-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: clamp(0.85rem, 0.9vw, 1.05rem);
+  transition: color 0.3s ease;
+}
+
+.back-home-link:hover {
+  color: var(--cyan-accent);
+}
+
+/* MAIN CARD CONTAINER */
+.login-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1.5rem, 3vw, 4rem) clamp(1rem, 4vw, 5rem);
+}
+
+.login-card-wrapper {
+  position: relative;
+  padding: 2px;
+  background: linear-gradient(135deg, var(--purple-accent), var(--cyan-accent), var(--orange-accent));
+  border-radius: 20px;
+  width: 100%;
+  max-width: 480px; /* Perfect for 4K / Large Screens */
+  box-shadow: var(--shadow-glow);
+}
+
+.login-card {
+  background: var(--bg-card);
+  border-radius: 18px;
+  padding: clamp(1.8rem, 3vw, 3rem);
+  width: 100%;
+}
+
+.login-title-box {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-title-box h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.4rem;
+}
+
+.login-title-box p {
+  color: var(--text-muted);
+  font-size: clamp(0.85rem, 0.95vw, 1.05rem);
+}
+
+/* FORM STYLING */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.input-group label {
+  font-size: clamp(0.8rem, 0.85vw, 0.95rem);
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 0.85rem 1rem 0.85rem 2.8rem;
+  background: var(--bg-input);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  border-radius: 10px;
+  font-size: clamp(0.9rem, 0.95vw, 1.05rem);
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-wrapper input:focus {
+  border-color: var(--cyan-accent);
+  box-shadow: 0 0 0 3px rgba(0, 240, 255, 0.15);
+}
+
+/* EXTRA OPTIONS */
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: clamp(0.75rem, 0.85vw, 0.95rem);
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.remember-me input {
+  accent-color: var(--cyan-accent);
+  cursor: pointer;
+}
+
+.forgot-password {
+  color: var(--cyan-accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.forgot-password:hover {
+  opacity: 0.8;
+}
+
+/* SUBMIT BUTTON */
+.login-submit-btn {
+  background: linear-gradient(135deg, var(--orange-accent), #f43f5e);
+  color: #ffffff;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: clamp(0.9rem, 1vw, 1.1rem);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 62, 0, 0.3);
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.login-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 62, 0, 0.45);
+}
+
+/* FOOTER LINK */
+.login-footer-text {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: clamp(0.85rem, 0.9vw, 1rem);
+  color: var(--text-muted);
+}
+
+.signup-link {
+  color: var(--cyan-accent);
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 0.3rem;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
